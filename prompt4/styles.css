@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-image: url(./imges/bakground.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container{
+    border: 1px solid black;
+    background-color: #fff;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.inner-container > .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.inner-container > .left > h3{
+    color: #0071f4;
+    
+}
+.inner-container > .left > div{
+    padding-left: 30px;
+}
+.inner-container > .left > div > input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    font-size: 30px;
+    color: #0071f4;
+}
+
+
+
+.inner-container > .right{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.inner-container > .right > .upper{
+    height: 60%;
+    color: #ffffff;
+    background-color: #0c1b43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.inner-container > .right > .lower{
+    height: 60%;
+    color: #fff;
+    background-color: #0071f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.inner-container > .right > .lower > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container > .right > .lower > div > p{
+   font-size: 12px;
+   padding-bottom: 30px;
+   padding-top: 40px;
+}
+.inner-container > .right > .lower > div > h1{
+   font-size: 50px;
+   padding-bottom: 30px;
+   padding-top: 30px;
+}
+.inner-container > .right > .lower > button{
+   padding: 10px 30px;
+   color: #0071f4;
+   background-color: #fff;
+   border: none;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   transition: 0.25s;
+   cursor: pointer;
+
+}
+.inner-container > .right > .lower > button:hover{
+   scale: 1.1;
+}
+
+
+

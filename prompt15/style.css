@@ -1,0 +1,12 @@
+.container {
+    perspective: 800px;
+  }
+  
+  .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    transform: rotateX(15deg) rotateY(10deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }

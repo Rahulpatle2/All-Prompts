@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #bac5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container > .box{
+    width: 50%;
+    height: 60%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #353a45;
+    border-radius: 25px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box > .logo{
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(77,166,227);
+    background: linear-gradient(45deg, rgba(77,166,227,1) 0%, rgba(140,119,194,1) 100%);
+
+}
+
+.box > .logo > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    
+}
+
+.box > h1{
+    font-size: 50px;
+    color: #538fff;
+}
+
+.box > p{
+   font-size: 25px;
+   color: #fbfbfb;
+}
+.box > p:last-child{
+   font-size: 21px;
+   color: #717680;
+}
+
+.box > .inputs > input{
+    padding: 12px 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+}
+
+.box > .inputs > button{
+   padding: 12px 30px;
+   font-size: 25px;
+   border-radius: 15px;
+   background-color: #538fff;
+   color: #fbfbfb;
+   cursor: pointer;
+   margin-left: 10px;
+}
+.box > .inputs > button:hover{
+   color: #538fff;
+   border: 1px solid #538fff;
+   background-color: #fbfbfb;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .box > .logo{
+       scale: 0.8;
+       
+    }
+    .box > h1{
+        font-size: 30px;
+    }
+    .box > p{
+        font-size: 15px;
+        color: #fbfbfb;
+     }
+     .box > p:last-child{
+        font-size: 12px;
+        color: #717680;
+     }
+     .box > .inputs {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .box > .inputs > input{
+        padding: 8px 40px;
+        border-radius: 8px;
+        font-size: 15px;
+        border: none;
+    }
+    .box > .inputs > button{
+        padding: 10px 22px;
+        font-size: 18px;
+        border-radius: 10px;
+       
+     }
+  }

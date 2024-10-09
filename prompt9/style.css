@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-vector/watercolor-human-rights-day-background_23-2150998255.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 50%;
+    background-color: #ffffff9c;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   
+}
+
+ .upper-part{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ .upper-part > h1{
+    font-size: 75px;
+    color: #b95eab;
+}
+.upper-part > p{
+   font-weight: 900;
+   font-size: 18px;
+   color: #fe3e01;
+}
+
+.lower-part > p{
+    font-weight: 900;
+    font-size: 18px;
+    color: #24bd8c;
+}
+
+.lower-part > .buttons{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+
+.lower-part > .buttons > button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: #ffffff;
+    font-size: 17px;
+    transition: 0.25s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    cursor: pointer;
+   
+}
+
+.lower-part > .buttons > button:hover {
+    color: royalblue;
+    background-color: #ffffff;
+    
+}

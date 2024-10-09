@@ -1,0 +1,52 @@
+@media only screen and (max-width:600px){
+    nav > ul,nav > button{
+    
+        display: none;
+       
+    }
+    
+    nav > img{
+        display: initial;
+    }
+    .main{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .main > .left{
+        width: 100%;
+    }
+    .main > .left > h1{
+        font-size: 40px;
+    }
+
+    .main > .right{
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main > .right > .img{
+        height: 80%;
+        width: 80%;
+    }
+
+    .main > .right > .img > img{
+        height: 100%;
+        width: 100%;
+    }
+    .header{
+        margin-bottom: 50%;
+    }
+    
+    .box{
+        width: 200px;
+    }
+
+    .box > img{
+        width: 100%;
+    }
+    
+}

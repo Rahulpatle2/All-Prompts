@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+}
+
+nav > div:first-child{
+    width: 75px;
+    object-fit: cover;
+    object-position: 50%,50%;
+}
+
+nav > div:first-child > img{
+    width: 100%;
+}
+
+nav > div:nth-child(2){
+    position: relative;
+    cursor: pointer;
+}
+
+/* nav > div:nth-child(2) > .underline{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    display: none;
+    transition: 0.25s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    
+}
+
+ nav > div:nth-child(2):hover  .underline{
+   transform: scaleX(1);
+} */
+
+nav > div:nth-child(2) .underline {
+    width: 0; /* Initialize width to 0 */
+    height: 1px;
+    background-color: #000000;
+    transition: width 0.4s ease-in-out; /* Adjust transition timing and easing as needed */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+  
+  nav > div:nth-child(2):hover .underline {
+    width: 100%; /* Set width to 100% on hover */
+  }
+
+  main{
+    height: 70%;
+  }
+
+main > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+main > div >h2{
+    font-size: 1.8rem;
+    padding-bottom: 4%;
+   
+}
+main > div > div{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    
+   
+}
+
+main > div > div > .left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main > div > div > .left >div >label{
+    color: #0000002b;
+    font-size: 11px;
+}
+main > div > div > .left >div >input{
+    border: none;
+    padding: 0px 100px 10px 0px;
+   border-bottom: 1px solid black;
+   text-align: left;
+}
+
+main > div > div > .left >button{
+    padding: 10px 0;
+    border: none;
+    cursor: not-allowed;
+}
+
+.middle {
+   display: flex;
+   align-items: center;
+}
+.middle >div{
+  background-color: #000000;
+  height: 40%;
+  width: 4px;
+  
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.right > div{
+   height: 60px;
+    width: 300px;
+   border: 1px solid black;
+   font-size: 14px;
+   display: flex;
+   padding: 0 50px 0 20px;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   /* text-align: center; */
+    
+}
+.right > div > .inner{
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #639be33d;
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+.right > div:hover .inner{
+    width: 100%;
+}
+
+main > div > p{
+    padding-top: 30px;
+   padding-bottom: 40px;
+}
+main > div > p:last-child{
+    color: #00000052;
+    font-size: 12px;
+}
