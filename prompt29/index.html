@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-auto bg-[#e0f1e7] flex items-center justify-center">
+    <form class="bg-white lg:w-1/2 md:w-3/4 sm:w-full h-auto rounded-md my-10 flex flex-col gap-7 px-6 py-8" action="">
+        <h1 class="text-3xl font-bold ">Contact Us</h1>
+
+        <div class="flex flex-col gap-5 md:flex-row md:items-start">
+            <div class="md:w-1/2 flex flex-col gap-2">
+                <label for="fname" class="text-sm font-medium">First Name *</label>
+                <input class="py-3 w-full border border-black rounded" type="text" id="fname">
+            </div>
+            <div class="md:w-1/2 flex flex-col gap-2">
+                <label for="lname" class="text-sm font-medium">Last Name *</label>
+                <input class="py-3 w-full border border-black rounded" type="text" id="lname">
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="email" class="text-sm font-medium">Email Address *</label>
+            <input class="py-3 w-full border border-black rounded" type="email" name="email" id="email">
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="Qtype" class="text-sm font-medium">Query Type *</label>
+            <div class="w-full flex flex-col md:flex-row gap-4">
+                <input id="generalEnquiry" class="py-3 w-full border border-black rounded" type="button" value="General Enquiry" onclick="selectQueryType('generalEnquiry')">
+                <input id="supportRequest" class="py-3 w-full border border-black rounded" type="button" value="Support Request" onclick="selectQueryType('supportRequest')">
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="text" class="text-sm font-medium">Message *</label>
+            <textarea class="py-3 w-full border border-black rounded" name="text" id="text"></textarea>
+        </div>
+
+        <div class="flex items-start gap-2">
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="text-sm">I consent to being contacted by the team *</label>
+        </div>
+
+        <button class="py-3 w-full border rounded-md bg-[#0d7d6a] duration-300 text-white text-lg hover:text-[#0d7d6a] hover:bg-white hover:border-[#0d7d6a]">
+            Submit
+        </button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

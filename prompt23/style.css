@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main{
+    background-image: url(https://i.pinimg.com/564x/15/b0/3f/15b03fa6a496dec211f49a54b5e1f49d.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 70%;
+    height: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+section > div:first-child{
+    background-image: url(https://i.pinimg.com/enabled_hi/236x/72/96/ff/7296ff01a92ff7ae23d8dafab06a3319.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    
+    
+}
+
+section > div:first-child >div{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    padding: 10% 10%;
+}
+section > div:first-child > div:last-child{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #212fce9a;
+  z-index: 0;
+}
+
+section > div:first-child >div >h1{
+   font-size: 5.5rem;
+   padding-bottom: 1rem;
+}
+section > div:first-child >div >p{
+    padding-bottom: 2rem;
+}
+section > div:first-child >div >p:last-child{
+    padding-bottom: 0.5rem;
+}
+section > div:first-child >div >div{
+    display: flex;
+    gap: 1rem;
+}
+section > div:first-child >div >div >button{
+    background-color: #2868BA;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    border:none;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+section > div:first-child >div >div >button:last-child{
+    background-color: #02beee;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+section > div:first-child >div >div >button:hover,section > div:last-child > div:last-child >button:hover{
+    color: #2868BA;
+    background-color: #fff;
+}
+
+
+
+section > div{
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+
+}
+section > div >h1{
+   font-size: 2rem;
+}
+section > div >p{
+   color: #bfbfe4;
+}
+section > div > div >input{
+   font-size: 1rem;
+   border: none;
+   padding: 15px 2rem;
+   padding-bottom: 0;
+   padding-left: 0;
+   border-bottom: 2px solid black;
+}
+section > div > div >input:focus{
+  background-color: yellow;
+  border: none;
+}
+
+section > div:last-child > div:nth-last-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+    color: #bfbfe4;
+}
+section > div:last-child > div:nth-last-child(2) >div >input[type = "checkbox"]{
+   color: yellow;
+}
+section > div:last-child > div:last-child{
+    width: 100%;
+    position: relative;
+}
+section > div:last-child > div:last-child >button{
+    background-color: #82D045;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    border:none;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: absolute;
+    right: 0;
+}
+
+

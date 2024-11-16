@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <main>
+        <nav class="bg-black text-white flex items-center justify-between w-full h-[10vh] px-3">
+            <div class="w-32 cursor-pointer">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <p class="text-xl font-semibold cursor-pointer hover:underline">Visit our Page</p>
+        </nav>
+       <section class="flex w-full h-[90vh] items-center justify-center ">
+        <form class="border bg-blue-100 rounded h-[75%]  w-[60%] flex flex-col gap-5 px-5 py-1" action="">
+            
+            <h1 class="text-3xl inline-block text-center">Tell us a little about yourself</h1>
+            <div class="flex items-center w-full justify-center">
+                <div class="h-6  w-6 border border-black rounded-full border-2 text-center cursor-pointer bg-blue">1</div>
+                <div class="w-12 h-[1px] bg-black"></div>
+                <div class="h-6 w-6 border border-black rounded-full border-2 text-center cursor-pointer">2</div>
+                <div class="w-12 h-[1px] bg-black"></div>
+                <div class="h-6 w-6 border border-black rounded-full border-2 text-center cursor-pointer">3</div>
+                <div class="w-12 h-[1px] bg-black"></div>
+                <div class="h-6 w-6 border border-black rounded-full border-2 text-center cursor-pointer">4</div>
+                <div class="w-12 h-[1px] bg-black"></div>
+                <div class="h-6 w-6 border border-black rounded-full border-2 text-center cursor-pointer">5</div>
+                
+                
+            </div>
+            <!-- gender -->
+            <div>
+                <p class="font-semibold" id="gender">Gender</p>
+                <div class="flex items-center gap-5">
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">female</label>
+                    </div>
+                </div>
+            </div>
+            <!-- name -->
+            <div class="flex items-center gap-5">
+               <div>
+                 <label class="font-semibold" for="firstname">firstname</label>
+                 <br>
+                 <input class="border border-black border-0 border-b-[2px]" type="text" id="firstname" placeholder="Enter your firstname">
+               </div>
+               <div>
+                 <label class="font-semibold" for="lastname">lastname</label>
+                 <br>
+                 <input class="border border-black border-0 border-b-[2px]" type="text" id="lastname" placeholder="Enter your lastname">
+               </div>
+            </div>
+            <div>
+                <label class="font-semibold" for="DOB">Date Of Birth</label>
+                <br>
+                <input type="date" name="DOB" id="DOB">
+            </div>
+            <!-- some text -->
+            <div class="w-full">
+                <input type="text" class="w-full border border-black" placeholder="Enter your birthplace ">
+            </div>
+            <!-- country of birth -->
+             <div>
+                <p class="font-semibold">Your Country</p>
+                <select class="border border-black" name="cob" id="cob">
+                    <option value="India">India</option>
+                    <option value="pakistan">Pakitstan</option>
+                    <option value="england">England</option>
+                </select>
+             </div>
+             <div class="flex w-full items-center justify-center  ">
+                <input class="border bg-blue-400  text-center text-white rounded px-8 py-2 cursor-pointer hover:border-blue-400 hover:bg-white hover:text-blue-400" type="submit" value="Submit">
+             </div>
+        </form>
+       </section>
+    </main>
+</body>
+</html>

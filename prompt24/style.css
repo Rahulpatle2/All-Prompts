@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background: url(https://i.pinimg.com/564x/74/28/bd/7428bd30fd66960b4e9bfb86716d4e7f.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+    
+}
+
+.upperlayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #9ac7b678;
+    z-index: 1;
+}
+
+main > div:nth-child(2){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10%;
+}
+
+.left{
+    width: 35%;
+    height: 85%;
+    /* border: 2px solid black; */
+    background: #344563;
+    color: white;
+    padding: 2% 2%;
+    
+}
+.left > p,.left > div:nth-last-child(2)  >p{
+   font-size: 1.1rem;
+   font-weight: 700;
+   
+
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+}
+
+.inner-circle{
+    width: 15px;
+    height: 15px;
+    background-color: #344563;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.left >div:nth-child(2) > div,.left > div:nth-last-child(2) >div >div{
+    border: 1px solid white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0 12%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.left >div:nth-child(2) > div >p{
+  width: 50%;
+  font-size: 12px;
+}
+
+.left >div:nth-child(2) > div:hover,.left > div:nth-last-child(2) >div >div:hover{
+    color: #344563;
+    background: white;
+}
+
+.left >div:nth-child(2) > div:hover .inner-circle{
+    background-color: #fff;
+}
+.left >div:nth-child(2) > div:hover .circle{
+    background-color: #fff;
+    border: 1px solid #344563;
+}
+
+
+.left > a,.left > div:last-child>a{
+    color: white;
+}
+
+.left > div:nth-last-child(2){
+    /* border: 2px solid white; */
+    margin-top: 10%;
+}
+.left > div:nth-last-child(2) >div,.left > div:nth-last-child(2) >div >div{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+   
+}
+
+.left > div:nth-last-child(2) >div >div{
+    height: 70px;
+}
+
+.left > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+.left > div:last-child >button{
+   padding: 10px 30px;
+   background-color: #c3f7d6;
+   border-radius: 25px;
+   font-size: 18px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.25s;
+}
+.left > div:last-child >button:hover{
+  color:#c3f7d6 ;
+  background-color: #344563;
+  border:1px solid #c3f7d6 ;
+}
+
+.right{
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 85%;
+}
+.right >div{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
