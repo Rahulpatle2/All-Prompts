@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    height:10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: #e96767; */
+}
+
+nav > div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav > div >ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-weight: 600;
+}
+nav > div >ul > li{
+    cursor: pointer;
+    transition: 0.25s;
+}
+nav > div >ul > li:hover{
+   color: #611f69;
+   scale: 1.01;
+}
+
+nav > div:nth-child(2) > i{
+   font-size: 18px;
+}
+
+nav > div:nth-child(2) > a{
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+}
+
+nav > div > button{
+ padding: 10px 20px;   
+ border-radius: 4px;
+ border: 2px solid #611f69;
+ background-color: #fff;
+ font-weight: 600;
+ transition: 0.25s;
+ cursor: pointer;
+}
+
+nav > div > button:hover{
+    scale: 1.05;
+    /* font-size: 16px; */
+}
+
+nav > div > button:nth-last-child(1){
+    background-color: #611f69;
+    color: #fff;
+}
+
+header > div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   padding-top: 2%;
+}
+
+header > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+header > div > div > h1,.page1 > .upper-part >h1{
+   font-size: 3.1rem;
+   /* letter-spacing: 1px; */
+}
+header > div > div > h1 >span,header > div > div > p >span{
+  color: #611f69;
+}
+
+header > div > div > button,.page1 > .upper-part > div >button{
+   padding: 17px 30px;
+   background-color:#611f69;
+   color: white;
+   font-weight: 600;
+   font-size: 18px;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+header > div > div > button:hover,.page1 > .upper-part > div >button:hover{
+  
+   background-color:#fafafa;
+   color: #611f69;
+}
+header > div > div > p >span,header > div > div > p{
+   font-weight: 600;
+   font-size: 17px;
+}
+header > div > div > p{
+    font-weight: 100;
+}
+
+header > div > div:nth-child(2){
+    flex-direction: row;
+    gap: 50px;
+}
+
+main{
+    width: 100%;
+    background-color: #f4ede4;
+    text-align: center;
+    padding-bottom: 10%;
+    
+}
+
+main > video{
+   display: inline-block;
+   margin-top: -20%;
+}
+
+main > div{
+    display: flex;
+    margin: 5% 10%;
+    gap: 5%;
+}
+
+main > div > div{
+   height: 400px;
+
+
+}
+main > div > div > video{
+    height: 100%;
+}
+main > div > div:nth-child(2),main > div:nth-last-child(2) > div:first-child{
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   padding-top: 30px;
+}
+main > div > div:nth-child(2) > h1,main > div:nth-last-child(2) > div:first-child >h1{
+   font-size: 50px;
+}
+main > div > div:nth-child(2) > p,main > div:nth-last-child(2) > div:first-child >p{
+   font-size: 20px;
+   line-height: 30px;
+   padding-top: 4%;
+   padding-bottom: 4%;
+}
+main > div > div:nth-child(2) > div,main > div:nth-last-child(2) > div:first-child >div{
+  position: relative;
+  width: fit-content;
+}
+main > div > div:nth-child(2) > div > a,main > div:nth-last-child(2) > div:first-child >div > a,.page1 > .upper-part >p{
+   font-size: 20px;
+   /* padding-top: 30px; */
+   text-decoration: none;
+   /* position: relative; */
+   /* padding-bottom: 10px; */
+
+}
+main > div > div:nth-child(2) > div > div,main > div:nth-last-child(2) > div:first-child >div > div{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #7f51a2;
+  width: 100%;
+  height: 2px;
+  transition: 0.25s;
+  /* display: none; */
+}
+
+main > div > div:nth-child(2) > div > div:hover,main > div:nth-last-child(2) > div:first-child >div > div:hover{
+  display: initial;
+}
+
+.page1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0;
+}
+ .page1 > .upper-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+ }
+ .page1 > .upper-part > div > button:nth-child(2){
+    border: 2px solid #611f69;
+    background-color: #fff;
+    color: #611f69;
+ }
+ .page1 > .upper-part > div > button:nth-child(2):hover{
+    color: #fff;
+    background-color: #611f69;
+ }
+
+ .page1 > .middle-part{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+ }
+ .page1 > .middle-part >div > h1{
+   font-size: 50px;
+   color: #611f69;
+ }
+
+ .page1 > .lower-part{
+    display: flex;
+    gap: 5%;
+    padding-bottom: 5%;
+ }
+ .page1 > .lower-part >div{
+   width: 50%;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   object-fit: cover;
+ }
+ .page1 > .lower-part >div >video{
+   width: 100%;
+   height: 100%;
+   border-radius: 0 300px 300px 0;
+ }
+
+ .page1 > .lower-part >div:nth-child(2){
+    padding: 20px 20px 0 20px;
+  }
+ .page1 > .lower-part >div:nth-child(2) >h1{
+    font-family: cursive;
+    padding-bottom: 10px;
+  }
+ .page1 > .lower-part >div:nth-child(2) >p{
+   font-weight: 900;
+   padding-bottom: 10px;
+  }
+
+  section{
+    background-color: #f4ede4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  section > h1{
+   font-size: 2.3rem;
+   padding: 5% 0;
+  }
+  section > div{
+   display: flex;
+   gap: 40px;
+  }
+  section > div >div{
+   height: 400px;
+   width: 300px;
+   background-color: #fff;
+   padding: 0 20px;
+   position: relative;
+   transition: 0.25s;
+   cursor: pointer;
+   
+  }
+  section > div >div:hover{
+  scale: 1.1;
+   
+  }
+  section > div >div > div{
+   text-align: center;
+   padding-top: 10px;
+   
+  }
+  section > div >div > a{
+    position: absolute;
+    bottom: 1%;
+    left: 20px;
+    font-weight: 600;
+   
+  }
+
+  .page5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.page5> .left-part{
+    width: 50%;
+    padding: 10% 0;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    
+}
+.page5>.left-part> .logo{
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+.page5 > .left-part > table{
+    height: 50%;
+    width: 100%;
+}
+
+.page5> .right-part{
+    width: 50%;
+    padding: 10% 0;
+    padding-top: 15%;
+    letter-spacing: 2px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    position: relative;
+    
+}
+.page5> .right-part > div > input{
+    padding: 10px 70px;
+    border-radius: 10px;
+    margin-top: 5%;
+    
+}
+.page5> .right-part > div > button{
+    padding: 9px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.page5> .right-part > div > button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+}
+
+.page5> .right-part > .links{
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
+   display: flex;
+   gap: 20px;
+    
+}
+.page5> .right-part > .links >a >i{
+  font-size: 20px;
+
+    
+}
+
+
+
+
+ 
+
+
+
+

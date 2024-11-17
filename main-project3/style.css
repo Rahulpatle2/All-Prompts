@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: helvetica;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%,50%;
+    
+}
+
+.header > video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -11;
+    object-fit: cover;
+    object-position: 50%,50%;
+    
+}
+.header > nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width:100%;
+   height: 10%;
+   padding-top: 1%;
+}
+
+.header > nav > .logo,.page5 >.left-part> .logo{
+    padding-left: 5%;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header > nav > .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 5%;
+}
+.header > nav > .options > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    /* font-weight: 100; */
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.25s;
+
+}
+.header > nav > .options > ul >li:hover{
+   color: #ffa500;
+
+}
+.header > nav > .options > button{
+   padding: 8px 18px;
+   background-color: #000000;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   font-size: 18px;
+   letter-spacing: 2px;
+   box-shadow: 1px 1px 1px black;
+   cursor: pointer;
+   transition: 0.25s;
+}
+.header > nav > .options > button:hover{
+   color: black;
+   /* border: 1px solid black; */
+   background-color: #fff;
+}
+
+.header > .middle-part{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.header > .middle-part > p:first-child{
+    font-size: 70px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding-top: 8%;
+    text-shadow: 1px 1px 1px black;
+
+}
+.header > .middle-part > p{
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 5px;
+
+    
+}
+.header > .shadow{
+   height: 12%;
+   width: 100%;
+   position: absolute;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.333) 0%, rgba(0, 0, 0, 0.753) 100%);
+   bottom: 0;
+   z-index: 100;
+}
+
+.page1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: white;
+
+}
+.page1 > .left-part{
+    width: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: #000000;
+}
+.page1 > .left-part > .s-line{
+    width: 2px;
+    height: 500px;
+    background-color: #ffffff;
+    /* margin-left: 20px; */
+    position: relative;
+}
+.page1 > .left-part > .s-line > div{
+    width: 5px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    position: absolute;
+    top: 40px;
+    left: -21px;
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+@keyframes updown{
+    from{
+        top: 40px;
+    }
+    to{
+        top: 300px;
+    }
+}
+
+
+
+.page1 > .left-part > div{
+    
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 50px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    
+}
+.page1 > .right-part{
+    background-color: #030303;
+    width: 40%;
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+}
+.page2 >section> .left-part{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    /* margin-left: 30px; */
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10%;
+}
+.page2 >section> .left-part > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+
+
+.page2 >section> .left-part >.s-line {
+    width: 2px;
+    height: 220px;
+    background-color: #000000;
+    /* margin-left: 20px; */
+    position: relative;
+}
+.page2 >section> .left-part >.s-line >div {
+    width: 5px;
+    height: 150px;
+    background-color: #000000;
+    bottom: 0;
+    position: absolute;
+}
+
+.page2 > .section2,.page3 > section,.page3 > .section2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.page2 >.section2> .left-part,.page3 > section >.right-part,.page3 >.section2> .left-part{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page2 >.section2> .left-part >div,.page3 > section >.right-part>div,.page3 >.section2> .left-part >div{
+    width: 80%;
+    /* height: 50vh; */
+    display: flex;
+    align-items: center;
+    /* margin-left: 30px; */
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10%;
+    padding: 0 20%;
+    justify-content: space-between;
+    gap: 40px;
+    font-weight: lighter;
+  
+    
+}
+
+
+.page2 >.section2> .left-part >div>h3,.page3 > section >.right-part> div >h3,.page3 >.section2> .left-part >div>h3{
+   font-size: 40px;
+   letter-spacing: 1px;
+    line-height: 70px;
+}
+.page2 >.section2> .left-part >div>p,.page3 > section >.right-part>div>p,.page3 >.section2> .left-part >div>p{
+   letter-spacing: 1px;
+   line-height: 25px;
+}
+.page2 >.section2> .left-part >div>button,.page3 > section >.right-part>div>button,.page3 >.section2> .left-part >div>button,.page4 > .box >div>button{
+   padding: 10px 50px;
+   padding-left: 30px;
+   font-size: 18px;
+   background-color: #ffffff00;
+   border: 1px solid black;
+   cursor: pointer;
+   
+   position: relative;
+   border-radius: 10px;
+}
+.page2 >.section2> .left-part >div>button:hover,.page3 > section >.right-part>div>button:hover,.page3 >.section2> .left-part >div>button:hover,.page4 > .box >div>button:hover{
+   color: white;
+   background-color: #000000;
+}
+.page2 >.section2> .left-part >div>button>div,.page3 > section >.right-part>div>button>div,.page3 >.section2> .left-part >div>button>div{
+    width: 40px;
+    height: 100%;
+    border-left: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.page2 >.section2> .right-part,.page3 >section > .left-part,.page3 >.section2> .right-part,.page3 >.section2> .right-part{
+    width: 50%;
+    object-fit: cover;
+    object-position: 50%,50%;
+}
+.page2 >.section2> .right-part>img,.page3 >.section2> .right-part>img{
+    width: 100%;
+    height: 100%;
+}
+
+.page4{
+    background-image: url(https://static.wixstatic.com/media/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg/v1/fill/w_1519,h_880,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.page4 > .box{
+    position: absolute;
+    width: 27%;
+    margin-left: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    gap: 30px;
+   
+}
+.page4 > .box >.s-line{
+    width: 1px;
+    height: 80%;
+    background-color: #ffffff;
+    /* margin-left: 20px; */
+    position: relative;
+   
+}
+.page4 > .box >.s-line >div{
+    width: 3px;
+    height: 20%;
+    background-color: #ffffff;
+    /* margin-left: 20px; */
+    position: absolute;
+    top: 10%;
+   
+}
+.page4 > .box >div{
+   width: 80%;
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   align-items: start;
+}
+
+.page4 > .box >div>h3{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.page4 > .box >div>h1{
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.page4 > .box >div>p{
+    letter-spacing: 1px;
+}
+.page4 > .box >div>button{
+   color: white;
+   background-color: #030303;
+   border: 1px solid #ffffff;
+   display: flex;
+   gap: 10px;
+}
+.page4 > .box >div>button:hover{
+   color: rgb(1, 1, 1);
+   background-color: #ffffff;
+   border: 1px solid #010101;
+}
+
+.page5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.page5> .left-part{
+    width: 50%;
+    padding: 10% 0;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    
+}
+.page5>.left-part> .logo{
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+.page5 > .left-part > table{
+    height: 50%;
+    width: 100%;
+}
+
+.page5> .right-part{
+    width: 50%;
+    padding: 10% 0;
+    padding-top: 15%;
+    letter-spacing: 2px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    position: relative;
+    
+}
+.page5> .right-part > div > input{
+    padding: 10px 70px;
+    border-radius: 10px;
+    margin-top: 5%;
+    
+}
+.page5> .right-part > div > button{
+    padding: 9px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.page5> .right-part > div > button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+}
+
+.page5> .right-part > .links{
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
+   display: flex;
+   gap: 20px;
+    
+}
+.page5> .right-part > .links >a >i{
+  font-size: 20px;
+
+    
+}
+
+
+
